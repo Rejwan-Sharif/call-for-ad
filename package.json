@@ -8,6 +8,9 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
+  "overrides": {
+    "@babel/traverse": "7.22.6"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "^16.1.0",
@@ -33,6 +36,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "schematics-scss-migrate": "^2.3.17",
     "typescript": "~5.1.3"
   }
 }

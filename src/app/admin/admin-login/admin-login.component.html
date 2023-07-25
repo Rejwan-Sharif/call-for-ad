@@ -1,0 +1,28 @@
+<div class="px-0 bg-light">
+    <div class="d-flex">
+        <div class="d-flex align-items-center " id="navbar"> <a
+                class="text-decoration-none fs15 fw-bold text-info ps-2" href="">CALLFORAD<span class="fs13 pe-2">.com</span></a> </div>
+        </div>
+    <div class="container">
+        <div class="d-flex justify-content-center" style="margin-top: 150px;">
+            <form class="w-25" (ngSubmit)="login()">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" name="email" [(ngModel)]="email" >
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" name="password" [(ngModel)]="password">
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+                <div class="mt-2">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+

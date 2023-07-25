@@ -1,0 +1,56 @@
+<nav class="navbar navbar-expand-lg" style="background-color: rgb(75, 122, 163);">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">CALL FOR AD</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex justify-content-center">
+                <ul class="navbar-nav mb-2 mb-lg-0" style="margin-left:450px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">All Ad</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fw-20" href="#">Bill Board</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Digital Bill Board</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">News Paper</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">TVC</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <button class="btn btn-warning">Post AD </button>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="d-flex justify-content-center" style="margin-top: 150px;">
+        <form class="w-25" (ngSubmit)="login()">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" name="email" [(ngModel)]="email">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" name="password" [(ngModel)]="password">
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+            <a class="font-monospace" href="#" style="margin-left: 90px;">Forget password ?</a>
+            <div class="mt-2">
+                <p class="text-start mt-3">Don't have an account? <a href="#">Sign up</a></p>
+            </div>
+        </form>
+    </div>
+</div>

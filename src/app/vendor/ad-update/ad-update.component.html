@@ -1,0 +1,138 @@
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Container wrapper -->
+    <div class="container">
+      <!-- Navbar brand -->
+      <a class="navbar-brand" href="">Call For AD</a>
+      <!-- Search form -->
+  
+      <!-- Toggle button -->
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+        data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+  
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Left links -->
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active d-flex flex-column text-center" aria-current="page" href="vendor"><i class="fas fa-home fa-lg"></i><span class="small">List of AD</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex flex-column text-center" aria-current="page" href="post-ad"><i class="fas fa-user-friends fa-lg"></i><span class="small">Post AD</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex flex-column text-center" aria-current="page" href="#"><i class="fas fa-briefcase fa-lg"></i><span class="small">Promote Ad</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex flex-column text-center" aria-current="page" href="#"><i class="fas fa-comment-dots fa-lg"></i><span class="small">Quotation</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex flex-column text-center" aria-current="page" href="#"><i class="fas fa-bell fa-lg"></i><span class="small">Notifications</span></a>
+          </li>
+          <li class="nav-item dropdown">
+           <button class="btn btn-danger">Logout</button>
+          </li>
+        </ul>
+        <!-- Left links -->
+      </div>
+      <!-- Collapsible wrapper -->
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
+
+
+  <div class="container">
+    <h1 class="text-center mt-3">Update Your AD</h1>
+   <form class="row g-3 mt-3 w-50" (ngSubmit)="adUpdate()" style="margin-left: 320px;">
+       <div class="col-md-12">
+         <label for="firstname" class="form-label">Title</label>
+         <input type="text" class="form-control" name="title" [(ngModel)]="ads.title"  >
+       </div>
+       <div class="col-md-12">
+         <label for="lastname" class="form-label">Location</label>
+         <input type="text" class="form-control" name="location" [(ngModel)]="ads.location" >
+       </div>
+       <div class="col-md-6">
+        <label for="inputCity" class="form-label">Type</label>
+        <select id="inputState" class="form-select" name="type" [(ngModel)]="ads.type">
+          <option>Billboard</option>
+          <option>Digital Billboard</option>
+          <option>Transport Advertisement</option>
+          <option>Others</option>
+        </select>
+      </div>
+       <div class="col-md-6">
+        <label for="inputCity" class="form-label">Status</label>
+        <select id="inputState" class="form-select" name="status" [(ngModel)]="ads.status">
+          <option>Available</option>
+          <option>Booked</option>
+        </select>
+       </div>
+       <div class="col-md-6">
+         <label for="inputPassword4" class="form-label">Height</label>
+         <input type="text" class="form-control" name="height" [(ngModel)]="ads.height">
+       </div>
+       <div class="col-md-6">
+         <label for="inputPassword4" class="form-label">Width</label>
+         <input type="text" class="form-control" name="width" [(ngModel)]="ads.width" >
+       </div>
+       
+       <div class="col-md-6">
+         <label for="inputCity" class="form-label">District or City</label>
+         <select id="inputState" class="form-select" name="area" [(ngModel)]="ads.area" >
+           <option selected>Choose City or District</option>
+           <option>Dhaka</option>
+           <option>Chittagong</option>
+           <option>Khulna</option>
+         </select>
+       </div>
+       <div class="col-md-6">
+         <label for="inputState" class="form-label">Purpose</label>
+         <select id="inputState" class="form-select" name="purpose" [(ngModel)]="ads.purpose">
+           <option selected>Choose your Location</option>
+           <option>Sell</option>
+           <option>Rent</option>
+           <option>Cntructual</option>
+         </select>
+       </div>
+        <div class="col-12">
+           <label for="inputAddress2" class="form-label">Facing</label>
+           <input type="text" class="form-control" placeholder=" Dhaka Mymansing Highway" name="facing" [(ngModel)]="ads.facing">
+        </div>
+        <div class="col-12">
+           <label for="inputAddress2" class="form-label">Expected Price</label>
+           <input type="text" class="form-control" placeholder="20000" name="price" [(ngModel)]="ads.price">
+        </div>
+        <div class="col-12">
+           <label for="inputAddress2" class="form-label"> Title Image</label>
+           <input type="text" class="form-control" name="title_image" [(ngModel)]="ads.title_image">
+        </div>
+        <div class="col-6">
+           <label for="inputAddress2" class="form-label">Upload A Photo</label>
+           <input type="text" class="form-control" name="second_image" [(ngModel)]="ads.second_image">
+        </div>
+        <div class="col-6">
+           <label for="inputAddress2" class="form-label">Upload A Photo</label>
+           <input type="text" class="form-control" name="third_image" [(ngModel)]="ads.third_image">
+        </div>
+        <div class="col-6">
+           <label for="inputAddress2" class="form-label">Upload A Photo</label>
+           <input type="text" class="form-control" name="fourth_image" [(ngModel)]="ads.fourth_image" >
+        </div>
+        <div class="col-6">
+           <label for="inputAddress2" class="form-label">Upload A Photo</label>
+           <input type="text" class="form-control" name="final_image" [(ngModel)]="ads.final_image" >
+        </div>
+        <div class="col-12">
+          <label for="exampleFormControlTextarea1" class="form-label">Others Information</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" name="other_details" [(ngModel)]="ads.other_details" rows="3"></textarea>
+        </div>
+       <div class="col-12">
+         <button type="submit" class="btn btn-primary">Post Your Ad</button>
+       </div>
+     </form>
+   </div>

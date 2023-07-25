@@ -1,0 +1,130 @@
+<div class="row">
+    <aside class="col-3 fixed-top">
+        <h4 class="mt-3">CALL For AD</h4>
+        <h6 class="pt-3">Admin DashBord </h6>
+        <a href="">
+          Home
+        </a>
+        <a href="insert">
+          <i class="fa fa-laptop" aria-hidden="true"></i>
+          Add product
+        </a>
+        <a href="show">
+          <i class="fa fa-clone" aria-hidden="true"></i>
+          Show Product
+        </a>
+        <a href="admin-loginview" onclick="logout()">
+          <i class="fa fa-clone" aria-hidden="true"></i>
+          Logout
+        </a>
+      </aside>
+
+      <div class="col-9" style="margin-left: 300px;">
+       <form class="row g-3 mt-3 w-50" (ngSubmit)="updateStatus()" style="margin-left: 320px;">
+           <div class="col-md-12">
+             <label for="firstname" class="form-label">Ad Id</label>
+             <input type="text" class="form-control" name="id" [(ngModel)]="vd.id">
+           </div>
+           <div class="col-md-12">
+             <label for="firstname" class="form-label">Title</label>
+             <input type="text" class="form-control" name="title" [(ngModel)]="vd.title">
+           </div>
+           <div class="col-md-12">
+             <label for="lastname" class="form-label">Location</label>
+             <input type="text" class="form-control" name="location" [(ngModel)]="vd.location">
+           </div>
+           <div class="col-md-6">
+            <label for="inputCity" class="form-label">Type</label>
+            <select id="inputState" class="form-select" name="type" [(ngModel)]="vd.type">
+              <option>Billboard</option>
+              <option>Digital Billboard</option>
+              <option>Transport Advertisement</option>
+              <option>Others</option>
+            </select>
+          </div>
+           <div class="col-md-6">
+            <label for="inputCity" class="form-label">Status</label>
+            <select id="inputState" class="form-select" name="status" [(ngModel)]="vd.status">
+              <option>Available</option>
+              <option>Booked</option>
+            </select>
+           </div>
+           <div class="col-md-6">
+             <label for="inputPassword4" class="form-label">Height</label>
+             <input type="text" class="form-control" name="height" [(ngModel)]="vd.height">
+           </div>
+           <div class="col-md-6">
+             <label for="inputPassword4" class="form-label">Width</label>
+             <input type="text" class="form-control" name="width" [(ngModel)]="vd.width">
+           </div>
+           
+           <div class="col-md-6">
+             <label for="inputCity" class="form-label">District or City</label>
+             <select id="inputState" class="form-select" name="area" [(ngModel)]="vd.area">
+               <option selected>Choose City or District</option>
+               <option>Dhaka</option>
+               <option>Chittagong</option>
+               <option>Khulna</option>
+             </select>
+           </div>
+           <div class="col-md-6">
+             <label for="inputState" class="form-label">Purpose</label>
+             <select id="inputState" class="form-select" name="purpose" [(ngModel)]="vd.purpose" >
+               <option selected>Choose your Location</option>
+               <option>Sell</option>
+               <option>Rent</option>
+               <option>Cntructual</option>
+             </select>
+           </div>
+            <div class="col-12">
+               <label for="inputAddress2" class="form-label">Facing</label>
+               <input type="text" class="form-control" placeholder=" Dhaka Mymansing Highway" name="facing" [(ngModel)]="vd.facing">
+            </div>
+            <div class="col-12">
+               <label for="inputAddress2" class="form-label">Expected Price</label>
+               <input type="text" class="form-control" placeholder="20000" name="price" [(ngModel)]="vd.price">
+            </div>
+            <div class="col-12">
+               <label for="inputAddress2" class="form-label"> Title Image</label>
+               <input type="text" class="form-control" name="title_image" [(ngModel)]="vd.title_image">
+            </div>
+            <div class="col-6">
+               <label for="inputAddress2" class="form-label">Upload A Photo</label>
+               <input type="text" class="form-control" name="second_image" [(ngModel)]="vd.second_image">
+            </div>
+            <div class="col-6">
+               <label for="inputAddress2" class="form-label">Upload A Photo</label>
+               <input type="text" class="form-control" name="third_image" [(ngModel)]="vd.third_image">
+            </div>
+            <div class="col-6">
+               <label for="inputAddress2" class="form-label">Upload A Photo</label>
+               <input type="text" class="form-control" name="fourth_image" [(ngModel)]="vd.fourth_image">
+            </div>
+            <div class="col-6">
+               <label for="inputAddress2" class="form-label">Upload A Photo</label>
+               <input type="text" class="form-control" name="final_image" [(ngModel)]="vd.final_image">
+            </div>
+            <div class="col-12">
+              <label for="exampleFormControlTextarea1" class="form-label">Others Information</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" name="other_details" [(ngModel)]="vd.other_details" rows="3"></textarea>
+            </div>
+            <div class="col-12">
+                <label for="inputAddress2" class="form-label">Vendor Id</label>
+                <input type="text" class="form-control" name="vendorId" [(ngModel)]="vd.vendorId">
+             </div>
+             <div class="col-md-6">
+                <label for="inputState" class="form-label">Ad Status</label>
+                <select id="inputState" class="form-select" name="adStatus" [(ngModel)]="vd.adStatus" >
+                  <option selected>AdStatus</option>
+                  <option>Pending</option>
+                  <option>Approved</option>
+                  <option>Rejected</option>
+                </select>
+              </div>
+           <div class="col-12">
+             <button type="submit" class="btn btn-primary">Update Ad Status</button>
+           </div>
+         </form>
+       </div>
+
+</div>
