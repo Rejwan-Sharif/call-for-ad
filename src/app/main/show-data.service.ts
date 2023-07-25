@@ -23,10 +23,9 @@ export class ShowDataService {
     }
 
     sendQuotation(quotRequest:QuotationRequest){
-      console.log(quotRequest, 3333);
-      
-      this.baseUrl = 'http://localhost:8080/sendQuotation'
+    this.baseUrl = 'http://localhost:8080/sendQuotation'
       return this.client.post(this.baseUrl,quotRequest);
     }
+    
   
 }

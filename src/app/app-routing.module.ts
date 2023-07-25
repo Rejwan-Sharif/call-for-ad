@@ -18,6 +18,8 @@ import { GetQuotationComponent } from './vendor/get-quotation/get-quotation.comp
 import { ViewQuotationComponent } from './vendor/view-quotation/view-quotation.component';
 import { PromoteAdComponent } from './vendor/promote-ad/promote-ad.component';
 import { AdUpdateComponent } from './vendor/ad-update/ad-update.component';
+import { AdminNewspaperComponent } from './admin/admin-newspaper/admin-newspaper.component';
+import { ViewNewspaperDataComponent } from './admin/view-newspaper-data/view-newspaper-data.component';
 
 
 const routes: Routes = [
@@ -38,7 +40,9 @@ const routes: Routes = [
   { path : 'view-data/:id', component: ViewAdDetailsComponent},
   { path : 'quotations',component:GetQuotationComponent},
   { path : 'view-details/:quotationId',component:ViewQuotationComponent},
-  { path : 'promote-ad/:adId',  component:PromoteAdComponent}
+  { path : 'promote-ad/:adId',  component:PromoteAdComponent},
+  { path : 'admin-newspaper',  component:AdminNewspaperComponent},
+  { path : 'newspaper-ad/:id', component:ViewNewspaperDataComponent}
 ];
 
 @NgModule({

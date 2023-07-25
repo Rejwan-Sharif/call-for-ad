@@ -26,7 +26,7 @@ export class ViewAdDetailsComponent {
     this.adminService.updateAdData(this.vd).subscribe(data=>{
       console.log(data);
       alert('success');
-      this.router.navigate(['admin'])
+      this.router.navigate(['admin-newspaper'])
     })
   }
 

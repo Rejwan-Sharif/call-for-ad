@@ -1,0 +1,110 @@
+<div class="row">
+    <aside class="col-3 fixed-top">
+        <h4 class="mt-3">CALL For AD</h4>
+        <h6 class="pt-3">Admin DashBord </h6>
+        <a href="">
+            Home
+        </a>
+        <a href="insert">
+            <i class="fa fa-laptop" aria-hidden="true"></i>
+            Add product
+        </a>
+        <a href="show">
+            <i class="fa fa-clone" aria-hidden="true"></i>
+            Show Product
+        </a>
+        <a href="admin-loginview" onclick="logout()">
+            <i class="fa fa-clone" aria-hidden="true"></i>
+            Logout
+        </a>
+    </aside>
+    <div class="col-9" style="margin-left: 300px;">
+        <h4 class="text-center"> Advertisement Details</h4>
+        <form class="row g-3 mt-3 w-50" (submit)="updateAdStatus()" style="margin-left: 320px;">
+            <div class="mt-2">
+                <label for="firstname" class="form-label">Select Newspaper</label>
+                <select id="inputState" class="form-select" name="newspaperName" disabled
+                    [(ngModel)]="ns.newspaperName">
+                    <option>Prothom Alo</option>
+                    <option>Kaler Kontho</option>
+                    <option>Bangladesh Pratidin</option>
+                    <option>Jonokontho</option>
+                    <option>Ittefaq</option>
+                    <option>Somokal</option>
+                    <option>Jugantor</option>
+                    <option>The daily Star</option>
+                    <option>The Bangladesh Today</option>
+                    <option>Dhaka Tribune</option>
+                </select>
+            </div>
+            <div class="mt-2">
+                <label for="firstname" class="form-label">Name</label>
+                <input type="text" class="form-control" name="name" disabled [(ngModel)]="ns.name">
+            </div>
+            <div class="mt-2">
+                <label for="firstname" class="form-label">Oraganization Name</label>
+                <input type="text" class="form-control" name="organizationName" disabled
+                    [(ngModel)]="ns.organizationName">
+            </div>
+            <div class="mt-2">
+                <label for="firstname" class="form-label">Phone</label>
+                <input type="text" class="form-control" name="phone" disabled [(ngModel)]="ns.phone">
+            </div>
+            <div class="mt-2">
+                <label for="firstname" class="form-label">Email</label>
+                <input type="text" class="form-control" name="email" disabled [(ngModel)]="ns.email">
+            </div>
+            <div class="mt-2">
+                <label for="firstname" class="form-label">Date (You want to Publish)</label>
+                <input type="date" class="form-control" name="publishDate" disabled [(ngModel)]="ns.publishDate">
+            </div>
+            <div class="mt-2">
+                <label for="firstname" class="form-label">Ad title</label>
+                <select id="inputState" class="form-select" name="adTitle" disabled [(ngModel)]="ns.adTitle">
+                    <option>Rent</option>
+                    <option>TO-LET</option>
+                    <option>PURCHASE</option>
+                    <option>SELL</option>
+                    <option>Flat Sell</option>
+                    <option>TUTION</option>
+                    <option>AFFIDAVIT</option>
+                    <option>MATRIMONIAL</option>
+                    <option>OBITUARY/MOURN</option>
+                    <option>DEATH ANNIVERSARY</option>
+                    <option>MISSING</option>
+                    <option>BIRTHDAY WISH</option>
+                    <option>OTHERS</option>
+                </select>
+            </div>
+            <div class="mt-4">
+                <label for="firstname" class="form-label">Write Your Ad Here</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" name="adDescription" disabled
+                    [(ngModel)]="ns.adDescription" rows="15"></textarea>
+            </div>
+            <div class="mt-4">
+                <label for="firstname" class="form-label fs-4">Rules Of Title Advertisement</label>
+                <p class="fs-5 bg-info p-3" style="text-align: justify;"> There are no spectacular titles in the
+                    classified ads. The price of such advertisements is a
+                    total of BDT <span class="bg-warning px-1"> 1450</span> for the first <span
+                        class="bg-warning px-1">15</span> words and BDT <span class="bg-warning px-1">60</span> for
+                    every subsequent word.
+                    An additional <span class="bg-warning px-1"> 15%</span> VAT will be added to the advertising
+                    price. Classified ads must be in a maximum of <span class="bg-warning px-1">40</span> words.</p>
+            </div>
+            <div class="mt-2">
+                <label for="firstname" class="form-label">Upload your Essential Document</label>
+                <input type="file" class="form-control" name="document" [(ngModel)]="ns.document">
+            </div>
+            <div class="mt-2">
+                <label for="firstname" class="form-label">Update Status</label>
+                <select id="inputState" class="form-select" name="publishStatus" [(ngModel)]="ns.publishStatus">
+                    <option>Pending</option>
+                    <option>Ongoing</option>
+                    <option>Published</option>
+                </select>
+            </div>
+            <div class="mt-3">
+                <button class="btn btn-success" type="submit">Update Status</button>
+            </div>
+        </form>
+    </div>

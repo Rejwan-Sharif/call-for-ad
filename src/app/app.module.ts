@@ -25,6 +25,8 @@ import { ViewAdDetailsComponent } from './admin/view-ad-details/view-ad-details.
 import { PromoteAdComponent } from './vendor/promote-ad/promote-ad.component';
 import { GetQuotationComponent } from './vendor/get-quotation/get-quotation.component';
 import { ViewQuotationComponent } from './vendor/view-quotation/view-quotation.component';
+import { AdminNewspaperComponent } from './admin/admin-newspaper/admin-newspaper.component';
+import { ViewNewspaperDataComponent } from './admin/view-newspaper-data/view-newspaper-data.component';
 
 
 
@@ -54,6 +56,8 @@ import { ViewQuotationComponent } from './vendor/view-quotation/view-quotation.c
     PromoteAdComponent,
     GetQuotationComponent,
     ViewQuotationComponent,
+    AdminNewspaperComponent,
+    ViewNewspaperDataComponent,
  
    
   ],
