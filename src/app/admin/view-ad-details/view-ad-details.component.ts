@@ -29,6 +29,9 @@ export class ViewAdDetailsComponent {
       this.router.navigate(['admin-newspaper'])
     })
   }
-
+  logout(){
+    localStorage.removeItem('email');
+    this.router.navigate(['admin-login']);
+   }
 
 }

@@ -19,9 +19,10 @@ export class ViewAllDetails {
 	 other_details?:any;
 	 adStatus?:any;
     vendorId?:any;
+    promotionStatus?:any;
     constructor(id?:any, title?:any, location?:any, type?:any, status?:any, height?:any, width?:any, area?:any, purpose?:any, 
         facing?:any, price?:any, title_image?:any, second_image?:any, third_image?:any, fourth_image?:any, final_image?:any, 
-        other_details?:any, adStatus?:any,vendorId?:any){
+        other_details?:any, adStatus?:any,vendorId?:any, promotionStatus?:any){
             this.id = id;
             this.title = title;
             this.location = location;
@@ -41,5 +42,6 @@ export class ViewAllDetails {
             this.other_details = other_details;
             this.adStatus = adStatus;
             this.vendorId = vendorId;
+            this.promotionStatus = promotionStatus;
     }
 }

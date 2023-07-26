@@ -27,6 +27,7 @@ import { GetQuotationComponent } from './vendor/get-quotation/get-quotation.comp
 import { ViewQuotationComponent } from './vendor/view-quotation/view-quotation.component';
 import { AdminNewspaperComponent } from './admin/admin-newspaper/admin-newspaper.component';
 import { ViewNewspaperDataComponent } from './admin/view-newspaper-data/view-newspaper-data.component';
+import { ShowPromotionComponent } from './admin/show-promotion/show-promotion.component';
 
 
 
@@ -58,6 +59,7 @@ import { ViewNewspaperDataComponent } from './admin/view-newspaper-data/view-new
     ViewQuotationComponent,
     AdminNewspaperComponent,
     ViewNewspaperDataComponent,
+    ShowPromotionComponent,
  
    
   ],

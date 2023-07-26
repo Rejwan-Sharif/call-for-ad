@@ -27,5 +27,10 @@ export class ShowDataService {
       return this.client.post(this.baseUrl,quotRequest);
     }
     
+    getProAd():Observable<ShowData[]> {
+      this.baseUrl = 'http://localhost:8080/showProAd';
+      return this.client.get<ShowData[]>(this.baseUrl);
+    }
+    
   
 }

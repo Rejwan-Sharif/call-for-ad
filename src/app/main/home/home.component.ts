@@ -12,12 +12,13 @@ export class HomeComponent {
 
 
   ad : ShowData [] =[];
-
+  proAd : ShowData[] =[];
  
   constructor(private router: Router, private adminOp : ShowDataService){
   }
   ngOnInit() {
     this.getAllAd();
+    this.viewProAd();
   }
   
   getAllAd() {
@@ -28,6 +29,12 @@ export class HomeComponent {
 
   viewAd(id:any) {
     this.router.navigate(['show-details',id]);
+  }
+  
+  viewProAd(){
+    this.adminOp.getProAd().subscribe(data =>{
+      this.proAd =  data;
+    });
   }
 
 }

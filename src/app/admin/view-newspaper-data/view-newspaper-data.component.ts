@@ -30,5 +30,10 @@ updateAdStatus(){
   });
 }
 
+logout(){
+  localStorage.removeItem('email');
+  this.router.navigate(['admin-login']);
+ }
+
 
 }

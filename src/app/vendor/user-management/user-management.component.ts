@@ -26,6 +26,7 @@ export class UserManagementComponent {
   final_image:any;
   other_details:any;
   adStatus:any;
+  promotionStatus:any;
   ad:any;
 
   ads : AdManagement = new AdManagement();

@@ -22,7 +22,6 @@ export class AdUpdateComponent {
   ngOnInit() {
     let adId = this.route.snapshot.params['adId'];
     this.adService.getAdID(adId).subscribe(data=>{
-      console.log(data);
       this.ads = data;
     })
   }

@@ -20,6 +20,7 @@ import { PromoteAdComponent } from './vendor/promote-ad/promote-ad.component';
 import { AdUpdateComponent } from './vendor/ad-update/ad-update.component';
 import { AdminNewspaperComponent } from './admin/admin-newspaper/admin-newspaper.component';
 import { ViewNewspaperDataComponent } from './admin/view-newspaper-data/view-newspaper-data.component';
+import { ShowPromotionComponent } from './admin/show-promotion/show-promotion.component';
 
 
 const routes: Routes = [
@@ -42,7 +43,8 @@ const routes: Routes = [
   { path : 'view-details/:quotationId',component:ViewQuotationComponent},
   { path : 'promote-ad/:adId',  component:PromoteAdComponent},
   { path : 'admin-newspaper',  component:AdminNewspaperComponent},
-  { path : 'newspaper-ad/:id', component:ViewNewspaperDataComponent}
+  { path : 'newspaper-ad/:id', component:ViewNewspaperDataComponent},
+  { path : 'show-Promotion', component: ShowPromotionComponent}
 ];
 
 @NgModule({

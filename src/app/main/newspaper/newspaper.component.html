@@ -93,7 +93,7 @@
                 </div>
                 <div class="mt-2">
                     <label for="firstname" class="form-label">Date (You want to Publish)</label>
-                    <input type="date" class="form-control" name="publishDate" [(ngModel)]="np.publishDate" >
+                    <input type="date" class="form-control" name="publishDate" [(ngModel)]="np.publishDate">
                 </div>
                 <div class="mt-2">
                     <label for="firstname" class="form-label">Ad title</label>
@@ -115,8 +115,8 @@
                 </div>
                 <div class="mt-4">
                     <label for="firstname" class="form-label">Write Your Ad Here</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" name="adDescription" [(ngModel)]="np.adDescription"
-                        rows="15"></textarea>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" name="adDescription"
+                        [(ngModel)]="np.adDescription" rows="15"></textarea>
                 </div>
                 <div class="mt-4">
                     <label for="firstname" class="form-label fs-4">Rules Of Title Advertisement</label>
@@ -137,9 +137,52 @@
                 </div>
             </form>
         </div>
-        <div class="col-5 my-5">
+        <div class="col-5  my-5">
             <h4 class="text-center">Sample advertising</h4>
-
+            <div class="my-4 ms-2">
+                <label for="firstname" class="form-label bg-info fs-2 px-2">বাড়ী ভাড়া</label>
+                <p class="fs-5 bg-secondary p-3" style="text-align: justify;"> বাড়ী ভাড়া:প্লট XX, সোহরাওয়ার্দী এভিনিউ,
+                    বারিধারা কূটনীতিক এলাকায় ৮ বেড, বাথ, কিচেন, ড্রইং, ডাইনিং ও অন্যান্য সুবিধা-পার্কিং (৩/৪টি),
+                    ড্রাইভার রুম, গার্ডরুম, গার্ডেন ইত্যাদিসহ ৮ কাঠা প্লট ৫,০০০ বর্গফুটের একটি দোতলা বাড়ী ভাড়া হবে।
+                    ফোন:০১৭৩XXXXXXX, ০১৭১XXXXXXXX।</p>
+            </div>
+            <div class="my-4 ms-2">
+                <label for="firstname" class="form-label bg-info fs-2 px-2">ক্রয়</label>
+                <p class="fs-5 bg-secondary p-3" style="text-align: justify;"> প্লট ক্রয়: রাজউকের পূর্বাচল উপশহরে যে কোন
+                    সেক্টরে যে কোন সাইজের প্লট ক্রয় করিতে ইচ্ছুক। সম্মানিত প্লট বিক্রেতাগণ যোগাযোগ করুন। X ল্যান্ড
+                    ট্রেডিং, বাড়ি-X, রোড-X, সেক্টর-X, উত্তরা, ঢাকা। ০১৭১XXXXXXX।</p>
+            </div>
+            <div class="my-4 ms-2">
+                <label for="firstname" class="form-label bg-info fs-2 px-2">বিক্রয়</label>
+                <p class="fs-5 bg-secondary p-3" style="text-align: justify;"> বিক্রয়: জরুরি ভিত্তিতে ধানমন্ডিতে বসবাসরত
+                    একজন সিনিয়র ল' ইয়ারের (উকিল) সকল প্রকার আইন বিষয়ক বই ফার্নিচারসহ বিক্রয় করা হইবে, কেবলমাত্র
+                    সংশ্লিষ্ট বিষয়ে আগ্রহী ব্যক্তিগণ যোগাযোগ করুন। মোবাইল: ০১৭XXXXXXXX, ০১৬XXXXXXXX।</p>
+            </div>
+            <div class="my-4 ms-2">
+                <label for="firstname" class="form-label bg-info fs-2 px-2">পাত্রী চাই</label>
+                <p class="fs-5 bg-secondary p-3" style="text-align: justify;"> পাত্রী চাই: ঢাকায় স্থায়ী সচ্ছল পরিবারের
+                    শিক্ষিতা সুন্দরী লম্বা ধার্মিক পাত্রী চাই। ছেলে উত্তরায় বসবাসরত, হ্যান্ডসাম ইংলিশে মাস্টার্স (৩৪+)
+                    Renown Group of Company তে অফিসার। যোগাযোগ: পিতা-০১৭XXXXXXXX।</p>
+            </div>
+            <div class="my-4 ms-2">
+                <label for="firstname" class="form-label bg-info fs-2 px-2">টিউটর দিচ্ছি/নিচ্ছি</label>
+                <p class="fs-5 bg-secondary p-3" style="text-align: justify;"> টিউটর দিচ্ছি/নিচ্ছি: O/A লেভেল (ম্যাথস,
+                    ফিজিক্স, ক্যামিস্ট্রি, বায়োলজি, একাউন্টিং, ইকোনোমিক্স, বাংলা, ইংরেজী)/ওয়ান-দ্বাদশ/ বুয়েট/
+                    স্কলাস্টিকা/ISD/DPS/সানিডেল লেডিসহ। ০১৭১XXXXXXX।</p>
+            </div>
+            <div class="my-4 ms-2">
+                <label for="firstname" class="form-label bg-info fs-2 px-2">মৃত্যুবার্ষিকী</label>
+                <p class="fs-5 bg-secondary p-3" style="text-align: justify;"> বিআইডব্লিউটিসির সাবেক কর্মকর্তা সৈয়দ
+                    মোহাম্মদ সাজ্জাদের ৪র্থ মৃত্যুবার্ষিকী আজ। এ উপলক্ষে ঢাকার X উপজেলার X ইউনিয়নের আগলা গ্রামের হযরত
+                    সৈয়দ মোকাররম আলী (র.) মাজার প্রাঙ্গণে আজ কোরআন খানি ও দোয়ার আয়োজন করা হয়েছে।</p>
+            </div>
+            <div class="my-4 ms-2">
+                <label for="firstname" class="form-label bg-info fs-2 px-2">এফিডেভিট/ সংশোধনী </label>
+                <p class="fs-5 bg-secondary p-3" style="text-align: justify;"> আমি মোহাম্মদ আব্দুল হাকিম গাজী, পিতা- মৃত
+                    জোনাব আলী গাজী আমার দাখিল পরীক্ষার সনদের নাম সঠিক থাকলেও আমিল, ফাজিল ও কামিল সনদে ভুলবশত মোহাম্মাদ
+                    আব্দুল হাকিম লিখা হয়েছে। প্রকৃতপক্ষে মোহাম্মাদ আব্দুল হাকিম গাজী হবে। যাহা বরিশাল নোটারি পাবলিক
+                    আদালতে সংশোধন করা হয়েছে। যার নোটারি নাম্বার XXXX। নিবেদক মোহাম্মাদ আব্দুল হাকিম গাজী</p>
+            </div>
         </div>
     </div>
 
