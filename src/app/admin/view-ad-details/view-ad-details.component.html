@@ -25,19 +25,19 @@
         <h1 class="tex-center">Update Ad Status</h1>
            <div class="col-md-12">
              <label for="firstname" class="form-label">Ad Id</label>
-             <input type="text" class="form-control" name="id" [(ngModel)]="vd.id">
+             <input type="text" class="form-control" name="id" disabled [(ngModel)]="vd.id">
            </div>
            <div class="col-md-12">
              <label for="firstname" class="form-label">Title</label>
-             <input type="text" class="form-control" name="title" [(ngModel)]="vd.title">
+             <input type="text" class="form-control" name="title" disabled [(ngModel)]="vd.title">
            </div>
            <div class="col-md-12">
              <label for="lastname" class="form-label">Location</label>
-             <input type="text" class="form-control" name="location" [(ngModel)]="vd.location">
+             <input type="text" class="form-control" name="location" disabled [(ngModel)]="vd.location">
            </div>
            <div class="col-md-6">
             <label for="inputCity" class="form-label">Type</label>
-            <select id="inputState" class="form-select" name="type" [(ngModel)]="vd.type">
+            <select id="inputState" class="form-select" name="type" disabled [(ngModel)]="vd.type">
               <option>Billboard</option>
               <option>Digital Billboard</option>
               <option>Transport Advertisement</option>
@@ -46,23 +46,23 @@
           </div>
            <div class="col-md-6">
             <label for="inputCity" class="form-label">Status</label>
-            <select id="inputState" class="form-select" name="status" [(ngModel)]="vd.status">
+            <select id="inputState" class="form-select" name="status" disabled [(ngModel)]="vd.status">
               <option>Available</option>
               <option>Booked</option>
             </select>
            </div>
            <div class="col-md-6">
              <label for="inputPassword4" class="form-label">Height</label>
-             <input type="text" class="form-control" name="height" [(ngModel)]="vd.height">
+             <input type="text" class="form-control" name="height" disabled [(ngModel)]="vd.height">
            </div>
            <div class="col-md-6">
              <label for="inputPassword4" class="form-label">Width</label>
-             <input type="text" class="form-control" name="width" [(ngModel)]="vd.width">
+             <input type="text" class="form-control" name="width" disabled [(ngModel)]="vd.width">
            </div>
            
            <div class="col-md-6">
              <label for="inputCity" class="form-label">District or City</label>
-             <select id="inputState" class="form-select" name="area" [(ngModel)]="vd.area">
+             <select id="inputState" class="form-select" name="area"  disabled [(ngModel)]="vd.area">
                <option selected>Choose City or District</option>
                <option>Dhaka</option>
                <option>Chittagong</option>
@@ -71,7 +71,7 @@
            </div>
            <div class="col-md-6">
              <label for="inputState" class="form-label">Purpose</label>
-             <select id="inputState" class="form-select" name="purpose" [(ngModel)]="vd.purpose" >
+             <select id="inputState" class="form-select" name="purpose" disabled [(ngModel)]="vd.purpose" >
                <option selected>Choose your Location</option>
                <option>Sell</option>
                <option>Rent</option>
@@ -80,39 +80,39 @@
            </div>
             <div class="col-12">
                <label for="inputAddress2" class="form-label">Facing</label>
-               <input type="text" class="form-control" placeholder=" Dhaka Mymansing Highway" name="facing" [(ngModel)]="vd.facing">
+               <input type="text" class="form-control" placeholder=" Dhaka Mymansing Highway" disabled name="facing" [(ngModel)]="vd.facing">
             </div>
             <div class="col-12">
                <label for="inputAddress2" class="form-label">Expected Price</label>
-               <input type="text" class="form-control" placeholder="20000" name="price" [(ngModel)]="vd.price">
+               <input type="text" class="form-control" placeholder="20000" name="price"disabled v [(ngModel)]="vd.price">
             </div>
             <div class="col-12">
                <label for="inputAddress2" class="form-label"> Title Image</label>
-               <input type="text" class="form-control" name="title_image" [(ngModel)]="vd.title_image">
+               <input type="text" class="form-control" name="title_image" disabled [(ngModel)]="vd.title_image">
             </div>
             <div class="col-6">
                <label for="inputAddress2" class="form-label">Upload A Photo</label>
-               <input type="text" class="form-control" name="second_image" [(ngModel)]="vd.second_image">
+               <input type="text" class="form-control" name="second_image" disabled [(ngModel)]="vd.second_image">
             </div>
             <div class="col-6">
                <label for="inputAddress2" class="form-label">Upload A Photo</label>
-               <input type="text" class="form-control" name="third_image" [(ngModel)]="vd.third_image">
+               <input type="text" class="form-control" name="third_image" disabled [(ngModel)]="vd.third_image">
             </div>
             <div class="col-6">
                <label for="inputAddress2" class="form-label">Upload A Photo</label>
-               <input type="text" class="form-control" name="fourth_image" [(ngModel)]="vd.fourth_image">
+               <input type="text" class="form-control" name="fourth_image" disabled [(ngModel)]="vd.fourth_image">
             </div>
             <div class="col-6">
                <label for="inputAddress2" class="form-label">Upload A Photo</label>
-               <input type="text" class="form-control" name="final_image" [(ngModel)]="vd.final_image">
+               <input type="text" class="form-control" name="final_image" disabled [(ngModel)]="vd.final_image">
             </div>
             <div class="col-12">
               <label for="exampleFormControlTextarea1" class="form-label">Others Information</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" name="other_details" [(ngModel)]="vd.other_details" rows="3"></textarea>
+              <textarea class="form-control" id="exampleFormControlTextarea1" disabled name="other_details" [(ngModel)]="vd.other_details" rows="3"></textarea>
             </div>
             <div class="col-12">
                 <label for="inputAddress2" class="form-label">Vendor Id</label>
-                <input type="text" class="form-control" name="vendorId" [(ngModel)]="vd.vendorId">
+                <input type="text" class="form-control" name="vendorId" disabled [(ngModel)]="vd.vendorId">
              </div>
              <div class="col-md-6">
                 <label for="inputState" class="form-label">Ad Status</label>
