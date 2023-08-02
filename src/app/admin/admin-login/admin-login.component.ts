@@ -21,7 +21,6 @@ export class AdminLoginComponent {
   login(){
    let admin : AdminOperation = new AdminOperation("","",this.email,this.password);
    this.adminService.authlogin(admin).subscribe(data =>{
-    console.log(data);
     if(data != null){
       localStorage.setItem('email',data.email);
       this.router.navigate(['admin']);
