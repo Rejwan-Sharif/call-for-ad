@@ -10,9 +10,7 @@ import { PromotionService } from 'src/app/vendor/promotion.service';
 })
 export class ShowPromotionComponent {
   promo : Promotion[]= [];
-  constructor(private service: PromotionService, private router: Router){
-    
-  }
+  constructor(private service: PromotionService, private router: Router){}
 
   ngOnInit(){
     this.service.viewPromo().subscribe(data=>{
@@ -25,6 +23,7 @@ export class ShowPromotionComponent {
     this.router.navigate(['admin-login']);
    }
 
+   
 
 
 

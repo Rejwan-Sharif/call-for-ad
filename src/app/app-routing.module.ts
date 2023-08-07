@@ -21,6 +21,8 @@ import { AdUpdateComponent } from './vendor/ad-update/ad-update.component';
 import { AdminNewspaperComponent } from './admin/admin-newspaper/admin-newspaper.component';
 import { ViewNewspaperDataComponent } from './admin/view-newspaper-data/view-newspaper-data.component';
 import { ShowPromotionComponent } from './admin/show-promotion/show-promotion.component';
+import { HireAdComponent } from './vendor/hire-ad/hire-ad.component';
+import { PrintInvoiceComponent } from './vendor/print-invoice/print-invoice.component';
 
 
 const routes: Routes = [
@@ -44,7 +46,10 @@ const routes: Routes = [
   { path : 'promote-ad/:adId',  component:PromoteAdComponent},
   { path : 'admin-newspaper',  component:AdminNewspaperComponent},
   { path : 'newspaper-ad/:id', component:ViewNewspaperDataComponent},
-  { path : 'show-Promotion', component: ShowPromotionComponent}
+  { path : 'show-Promotion', component: ShowPromotionComponent},
+  { path : 'hire-ad', component:HireAdComponent},
+  { path : 'print-invoice/:adId', component:PrintInvoiceComponent}
+ 
 ];
 
 @NgModule({

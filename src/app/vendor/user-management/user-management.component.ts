@@ -46,10 +46,9 @@ export class UserManagementComponent {
   }
 
   gotoPromotion(adId:any){
-    console.log(adId);
     this.router.navigate(['promote-ad',adId])
   }
-
+  
 logout(){
   localStorage.removeItem('email');
    this.router.navigate(['login']);

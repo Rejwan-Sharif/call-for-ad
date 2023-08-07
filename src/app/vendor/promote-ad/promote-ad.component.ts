@@ -19,7 +19,7 @@ export class PromoteAdComponent {
   subTotal:number =0;
   vat:number =0;
   total = 0;
-
+  promoId:any;
   constructor(private router : Router, private  adService: AdManagementService, private service: PromotionService, private route: ActivatedRoute){
     if(localStorage.getItem('email')==null){
       this.router.navigate(['login'])
@@ -32,6 +32,7 @@ export class PromoteAdComponent {
       this.ads = data;
     })
   }
+
 
  selectPromo(type:any){
   this.type = type;
@@ -46,6 +47,8 @@ export class PromoteAdComponent {
   this.total = this.subTotal + this.vat;
  }
 
+
+
  insertPromotion(){
   this.promo.adId = this.route.snapshot.params['adId'];
   this.promo.promotionCategory = this.type;
@@ -54,7 +57,8 @@ export class PromoteAdComponent {
   this.promo.vat = this.vat;
   this.service.postPromotion(this.promo).subscribe(data=>{
     alert("Your promotion has been  confirmed");
-  })
+    this.router.navigate(['print-invoice',this.promo.adId]);
+  });
  }
   
    

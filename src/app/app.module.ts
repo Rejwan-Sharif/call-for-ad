@@ -28,6 +28,11 @@ import { ViewQuotationComponent } from './vendor/view-quotation/view-quotation.c
 import { AdminNewspaperComponent } from './admin/admin-newspaper/admin-newspaper.component';
 import { ViewNewspaperDataComponent } from './admin/view-newspaper-data/view-newspaper-data.component';
 import { ShowPromotionComponent } from './admin/show-promotion/show-promotion.component';
+import { HireAdComponent } from './vendor/hire-ad/hire-ad.component';
+import { VendorHeaderComponent } from './vendor/vendor-header/vendor-header.component';
+import { VendorFooterComponent } from './vendor/vendor-footer/vendor-footer.component';
+import { PrintInvoiceComponent } from './vendor/print-invoice/print-invoice.component';
+
 
 
 
@@ -60,6 +65,10 @@ import { ShowPromotionComponent } from './admin/show-promotion/show-promotion.co
     AdminNewspaperComponent,
     ViewNewspaperDataComponent,
     ShowPromotionComponent,
+    HireAdComponent,
+    VendorHeaderComponent,
+    VendorFooterComponent,
+    PrintInvoiceComponent,
  
    
   ],

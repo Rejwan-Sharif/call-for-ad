@@ -11,14 +11,11 @@ import { QuotationRequest } from 'src/app/main/quotation-request';
 export class ViewQuotationComponent {
 
   constructor(private router: Router,private route : ActivatedRoute , private adService: AdManagementService){}
-   qm: QuotationRequest = new QuotationRequest();
+   qm = new QuotationRequest();
 
   ngOnInit(){
     let id = this.route.snapshot.params['quotationId'];
-    console.log(id);
-    
     this.adService.getFullQuotation(id).subscribe(data => {
-      console.log(data);
       this.qm  = data;
     })
   }

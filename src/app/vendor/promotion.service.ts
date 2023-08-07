@@ -22,4 +22,9 @@ export class PromotionService {
    return this.client.get<Promotion[]>(this.baseUrl);
   }
 
+  getPromoById(adId :any){
+    this.baseUrl = "http://localhost:8080/getPromoById/" + adId;
+    return this.client.get(this.baseUrl);
+  }
+
 }

@@ -1,0 +1,98 @@
+<a href="" class="text-decoration-none text-info" style="font-size: 30px;">callforad.com</a>
+		<div class="invoice-box mt-2">
+			
+			<table id="dataTable">
+				<tr class="top">
+					<td colspan="4">
+						<table>
+							<tr>
+								<td class="title">
+									<h1>Call For Ad</h1>
+								</td>
+								
+								<td colspan="5">
+									Invoice #: {{promo.promotionId}}<br />
+									Date : {{today | date:'medium'}}
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+				<tr class="information">
+					<td colspan="5">
+						<table>
+							<tr>
+								<td>
+									Call For Ad<br />
+									Road 11, Block B<br />
+									Banani, Dhaka 1212.
+								</td>
+								<td colspan="3">
+									Reciepent<br />
+									{{promo.cardHolderName}}<br />
+									{{promo.email}}
+								</td>
+								
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+				<tr class="heading">
+					<td colspan="4">Payment Method</td>
+				</tr>
+
+				<tr class="details">
+					<td>Packege Name :</td>
+					<td colspan="3">{{promo.promotionCategory}}</td>
+				</tr>
+
+				<tr class="heading">
+					<td colspan="4">Payment Info : </td>
+				</tr>
+
+				<tr class="item">
+					<td>Card Info : </td>
+					<td>{{promo.cardNumber}}</td>
+					<td>{{promo.expireDate}}</td>
+					<td>{{promo.cardHolderName}}</td>
+				</tr>
+
+				<tr class="item">
+					<td>MFS Info : </td>
+					<td>{{promo.mfs}} </td>
+					<td>{{promo.mfsNumber}}</td>
+					<td>{{promo.tsNumber}}</td>
+				</tr>
+
+				<tr class="heading">
+					<td>Payment Info : </td>
+					<td colspan="3">Amount</td>
+				</tr>
+
+				<tr class="item">
+					<td>Subtotal</td>
+					<td colspan="3">{{promo.subTotal}}</td>
+				</tr>
+
+				<tr class="item">
+					<td>VAT 7%</td>
+					<td colspan="3">{{promo.vat}}</td>
+				</tr>
+
+				<tr class="item last">
+					<td>Total</td>
+					<td colspan="3">{{promo.total}}</td>
+				</tr>
+				<tr>
+					<td colspan="4" class="text-center"><h6>Thanks For Choosing US</h6></td>
+				</tr>
+
+			</table>
+		</div>
+		<div  class="container mt-3" style="margin-left:620px ;">
+			<button class="btn btn-lg btn-info mx-4" (click)="generatePdf()">Print</button>
+		    <a class="btn btn-lg btn-warning" href="vendor">Cancel</a>
+		</div>
+		

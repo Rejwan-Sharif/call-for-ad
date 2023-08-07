@@ -12,9 +12,9 @@ export class AdManagementService {
 
 
   constructor(private client : HttpClient) { }
-ngOnInit(){
+ ngOnInit(){
   this.baseUrl = 'http://localhost:8080/getData';
-}
+ }
   // Ad Post api methods
 
   postAd(admanage : AdManagement){
