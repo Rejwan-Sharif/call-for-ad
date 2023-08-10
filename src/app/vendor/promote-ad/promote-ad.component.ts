@@ -4,6 +4,7 @@ import { AdManagementService } from '../ad-management.service';
 import { AdManagement } from '../ad-management';
 import { Promotion } from '../promotion';
 import { PromotionService } from '../promotion.service';
+import { Mail } from '../mail';
 
 @Component({
   selector: 'app-promote-ad',
@@ -14,6 +15,7 @@ export class PromoteAdComponent {
 
   ads = new AdManagement();
   promo = new Promotion();
+  mail = new Mail();
 
   type: string='';
   subTotal:number =0;
@@ -47,8 +49,6 @@ export class PromoteAdComponent {
   this.total = this.subTotal + this.vat;
  }
 
-
-
  insertPromotion(){
   this.promo.adId = this.route.snapshot.params['adId'];
   this.promo.promotionCategory = this.type;
@@ -61,6 +61,4 @@ export class PromoteAdComponent {
   });
  }
   
-   
-
 }

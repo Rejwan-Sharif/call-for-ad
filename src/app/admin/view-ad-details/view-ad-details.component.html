@@ -1,25 +1,7 @@
-<div class="row">
-  <aside class="col-3 fixed-top" >
-    <a href="" class="text-decoration-none"><h4 class="mt-3">CALL For AD</h4></a>
-    <h6 class="pt-3">Admin DashBord </h6>
-    <a href="admin">
-      List of AD
-    </a>
-    <a href="admin-newspaper">
-      <i class="fa fa-laptop" aria-hidden="true"></i>
-      Newspaper Ad
-    </a>
-    <a href="show-Promotion">
-      <i class="fa fa-clone" aria-hidden="true"></i>
-      Show Promotion List
-    </a>
-    <a  (click)="logout()">
-      <i class="fa fa-clone" aria-hidden="true"></i>
-      Logout
-    </a>
-  </aside>
+<app-aside></app-aside>
 
-      <div class="col-9" style="margin-left: 200px;">
+<div class="row">
+      <div class="col-9" style="margin-left: 350px;">
         
        <form class="row g-3 mt-3 w-50" (ngSubmit)="updateStatus()" style="margin-left: 320px;">
         <h1 class="tex-center">Update Ad Status</h1>

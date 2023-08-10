@@ -32,6 +32,9 @@ import { HireAdComponent } from './vendor/hire-ad/hire-ad.component';
 import { VendorHeaderComponent } from './vendor/vendor-header/vendor-header.component';
 import { VendorFooterComponent } from './vendor/vendor-footer/vendor-footer.component';
 import { PrintInvoiceComponent } from './vendor/print-invoice/print-invoice.component';
+import { ViewHireAdComponent } from './admin/view-hire-ad/view-hire-ad.component';
+import { AsideComponent } from './admin/aside/aside.component';
+import { DashboardComponent } from './admin/dashboard/dashboard.component';
 
 
 
@@ -69,6 +72,9 @@ import { PrintInvoiceComponent } from './vendor/print-invoice/print-invoice.comp
     VendorHeaderComponent,
     VendorFooterComponent,
     PrintInvoiceComponent,
+    ViewHireAdComponent,
+    AsideComponent,
+    DashboardComponent,
  
    
   ],

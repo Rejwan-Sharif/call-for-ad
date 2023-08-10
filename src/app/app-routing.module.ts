@@ -23,6 +23,7 @@ import { ViewNewspaperDataComponent } from './admin/view-newspaper-data/view-new
 import { ShowPromotionComponent } from './admin/show-promotion/show-promotion.component';
 import { HireAdComponent } from './vendor/hire-ad/hire-ad.component';
 import { PrintInvoiceComponent } from './vendor/print-invoice/print-invoice.component';
+import { DashboardComponent } from './admin/dashboard/dashboard.component';
 
 
 const routes: Routes = [
@@ -48,7 +49,8 @@ const routes: Routes = [
   { path : 'newspaper-ad/:id', component:ViewNewspaperDataComponent},
   { path : 'show-Promotion', component: ShowPromotionComponent},
   { path : 'hire-ad', component:HireAdComponent},
-  { path : 'print-invoice/:adId', component:PrintInvoiceComponent}
+  { path : 'print-invoice/:adId', component:PrintInvoiceComponent},
+  { path : 'dashboard', component:DashboardComponent}
  
 ];
 
