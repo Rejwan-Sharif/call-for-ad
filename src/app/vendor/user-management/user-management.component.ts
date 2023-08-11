@@ -32,7 +32,7 @@ export class UserManagementComponent {
   ads : AdManagement = new AdManagement();
   constructor(private router : Router, private  adService: AdManagementService, private route: ActivatedRoute){
     if(localStorage.getItem('email')==null){
-      this.router.navigate(['login'])
+      this.router.navigate(['admin-login'])
     }
   }
    ngOnInit(){
@@ -49,10 +49,7 @@ export class UserManagementComponent {
     this.router.navigate(['promote-ad',adId])
   }
   
-logout(){
-  localStorage.removeItem('email');
-   this.router.navigate(['login']);
-}
+
 
 updateAdByID(adId:any){
  this.router.navigate(['ad-update',adId])

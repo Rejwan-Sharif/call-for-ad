@@ -10,7 +10,11 @@ import { PromotionService } from 'src/app/vendor/promotion.service';
 })
 export class ShowPromotionComponent {
   promo : Promotion[]= [];
-  constructor(private service: PromotionService, private router: Router){}
+  constructor(private service: PromotionService, private router: Router){
+    if(localStorage.getItem('email')==null){
+      this.router.navigate(['admin-login'])
+    }
+  }
 
   ngOnInit(){
     this.service.viewPromo().subscribe(data=>{
@@ -18,10 +22,6 @@ export class ShowPromotionComponent {
     });
   }
 
-  logout(){
-    localStorage.removeItem('email');
-    this.router.navigate(['admin-login']);
-   }
 
    
 

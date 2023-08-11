@@ -18,11 +18,6 @@ ngOnInit(){
   });
 }
 
-  logout(){
-    localStorage.removeItem('email');
-    this.router.navigate(['admin-login']);
-   }
-
    showData(id:any){
     this.router.navigate(['newspaper-ad',id]);
    }

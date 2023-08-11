@@ -10,7 +10,7 @@ export class AsideComponent {
 
   constructor(private route : ActivatedRoute, private router : Router){
     if(localStorage.getItem('email')==null){
-      this.router.navigate(['login'])
+      this.router.navigate(['admin-login'])
     }
   }
   logout(){
