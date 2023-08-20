@@ -51,7 +51,6 @@ const routes: Routes = [
   { path : 'hire-ad', component:HireAdComponent},
   { path : 'print-invoice/:adId', component:PrintInvoiceComponent},
   { path : 'dashboard', component:DashboardComponent}
- 
 ];
 
 @NgModule({

@@ -10,7 +10,11 @@ import { NewspaperService } from 'src/app/main/newspaper.service';
 })
 export class AdminNewspaperComponent {
 adList : Newspaper[] =[];
-constructor(private service: NewspaperService, private router: Router){}
+constructor(private service: NewspaperService, private router: Router){
+  if(localStorage.getItem('email')==null){
+    this.router.navigate(['admin-login'])
+  }
+}
 
 ngOnInit(){
   this.service.getAllAd().subscribe(data=>{

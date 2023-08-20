@@ -9,7 +9,7 @@ import { ViewAllDetails } from '../view-all-details';
   styleUrls: ['./view-ad-details.component.css']
 })
 export class ViewAdDetailsComponent {
-  vd :  ViewAllDetails = new ViewAllDetails();
+  vd = new ViewAllDetails();
   constructor(private adminService  : AdminOperationService, private route : ActivatedRoute, private router : Router){
     if(localStorage.getItem('email')==null){
       this.router.navigate(['login'])
