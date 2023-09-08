@@ -17,11 +17,17 @@ export class ShowData {
     final_image?:any;
     other_details?:any;
     adStatus?:any;
-   vendorId?:any;
+    vendorId?:any;
+    firstName?:any;
+    lastName?:any;
+    email?:any;
+	  phone?:any;
+	  photo?:any;
+	  city?:any;
 
     constructor(id?: any, title?:any, location?:any, type?:any, status?:any, height?:any, width?:any, area?:any, purpose?:any, 
       facing?:any, price?:any, title_image?:any, second_image?:any, third_image?:any, fourth_image?:any, final_image?:any, 
-      other_details?:any, adStatus?:any,vendorId?:any){
+      other_details?:any, adStatus?:any,vendorId?:any,firstName?:any, lastName?:any,email?:any,phone?:any,photo?:any,city?:any){
         this.id = id;
        this.title = title;
        this.location = location;
@@ -41,5 +47,11 @@ export class ShowData {
        this.other_details = other_details;
        this.adStatus = adStatus;
        this.vendorId = vendorId;
+       this.firstName  = firstName;
+       this.lastName = lastName;
+       this.email = email;
+       this.phone = phone;
+       this.photo = photo;
+       this.city = city;
     }
 }

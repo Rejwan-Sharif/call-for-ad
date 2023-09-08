@@ -102,13 +102,13 @@
                 <div class="col-4">
                     <h3>Vendor Details</h3>
                     <div class="d-flex">
-                        <img src="" alt="" height="100px" width="100px">
+                        <img src="../../../assets/image/{{vd.photo}}" alt="" height="100px" width="100px">
                     </div>
                     <div class="">
-                        <p>Name : Rejwan Sharif</p>
-                        <p>Address : Mohakhali</p>
-                        <p>Contact : 01679287808 <br>
-                        mohammedrejwan8@gmail.com</p>
+                        <p>Name : {{vd.firstName+" "+vd.lastName}}</p>
+                        <p>Address : {{vd.city}}</p>
+                        <p>Contact : {{vd.phone}} <br>
+                        {{vd.email}}</p>
                     </div>
                 </div>
             </div>

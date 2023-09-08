@@ -18,7 +18,7 @@ export class ShowDataService {
   }
 
   getDetailAd(id :number ): Observable<ShowData> {
-    this.baseUrl = 'http://localhost:8080/detailAd/'+id;
+    this.baseUrl = 'http://localhost:8080/ad/'+id;
     return this.client.get(this.baseUrl);
     }
 
